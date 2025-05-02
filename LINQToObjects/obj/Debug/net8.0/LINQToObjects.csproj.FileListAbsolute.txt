@@ -1,0 +1,14 @@
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\bin\Debug\net8.0\LINQToObjects.exe
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\bin\Debug\net8.0\LINQToObjects.deps.json
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\bin\Debug\net8.0\LINQToObjects.runtimeconfig.json
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\bin\Debug\net8.0\LINQToObjects.dll
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\bin\Debug\net8.0\LINQToObjects.pdb
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\LINQToObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\LINQToObjects.AssemblyInfoInputs.cache
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\LINQToObjects.AssemblyInfo.cs
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\LINQToObjects.csproj.CoreCompileInputs.cache
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\LINQToObjects.dll
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\refint\LINQToObjects.dll
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\LINQToObjects.pdb
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\LINQToObjects.genruntimeconfig.cache
+D:\Rider\Sem4\LINQToObjects\LINQToObjects\obj\Debug\net8.0\ref\LINQToObjects.dll
