@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography;
-
-namespace LINQToObjects;
+﻿namespace LINQToObjects;
 
 public class Booking
 {

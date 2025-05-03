@@ -2,9 +2,9 @@
 
 public class Seeder
 {
-    public static List<Hotel> Hotels = new List<Hotel>
+    public static List<Hotel> Hotels = new()
     {
-        new Hotel { Id = 1, Name = "Grand Hotel", Country = "France", City = "Paris", Rating = 4.5},
+        new Hotel { Id = 1, Name = "Grand Hotel", Country = "France", City = "Paris", Rating = 4.5 },
         new Hotel { Id = 2, Name = "Ocean View", Country = "USA", City = "Miami", Rating = 4.2 },
         new Hotel { Id = 3, Name = "Mountain Lodge", Country = "Switzerland", City = "Zermatt", Rating = 4.8 },
         new Hotel { Id = 4, Name = "Le Royal Monceau", Country = "France", City = "Paris", Rating = 4.9 },
@@ -17,7 +17,7 @@ public class Seeder
         new Hotel { Id = 11, Name = "Test", Country = "2", City = "2", Rating = 4.0 }
     };
 
-    public static List<Client> Clients = new List<Client>
+    public static List<Client> Clients = new()
     {
         new Client { Id = 1, Name = "John Doe" },
         new Client { Id = 2, Name = "Jane Smith" },
@@ -32,7 +32,7 @@ public class Seeder
         new Client { Id = 11, Name = "John Hotel" }
     };
 
-    public static List<Room> Rooms = new List<Room>
+    public static List<Room> Rooms = new()
     {
         new Room { Id = 1, HotelId = 1, Number = "101", Price = 100 },
         new Room { Id = 2, HotelId = 2, Number = "202", Price = 150 },
@@ -48,7 +48,7 @@ public class Seeder
         new Room { Id = 12, HotelId = 10, Number = "1010", Price = 270 }
     };
 
-    public static List<Booking> Bookings = new List<Booking>
+    public static List<Booking> Bookings = new()
     {
         new Booking { Id = 1, ClientId = 1, RoomId = 1, Date = DateTime.Now.AddMonths(-1), ClientRating = 4.0 },
         new Booking { Id = 2, ClientId = 1, RoomId = 2, Date = DateTime.Now.AddMonths(-3), ClientRating = 2.5 },
@@ -69,30 +69,51 @@ public class Seeder
         new Booking { Id = 15, ClientId = 7, RoomId = 11, Date = DateTime.Now.AddMonths(-9), ClientRating = 3.1 },
         new Booking { Id = 16, ClientId = 7, RoomId = 11, Date = DateTime.Now.AddMonths(-8), ClientRating = 3.5 },
         new Booking { Id = 17, ClientId = 7, RoomId = 11, Date = DateTime.Now.AddMonths(-7), ClientRating = 4.2 },
-        new Booking { Id = 18, ClientId = 8, RoomId = 11, Date = DateTime.Now.AddMonths(-5), ClientRating = 4.7 }
-};
-    
+        new Booking { Id = 18, ClientId = 8, RoomId = 11, Date = DateTime.Now.AddMonths(-5), ClientRating = 4.7 },
+        new Booking { Id = 19, ClientId = 1, RoomId = 1, Date = new DateTime(2025, 4, 10), ClientRating = 4.2 },
+        new Booking { Id = 20, ClientId = 2, RoomId = 9, Date = new DateTime(2025, 4, 15), ClientRating = 4.0 },
+        new Booking { Id = 21, ClientId = 3, RoomId = 9, Date = new DateTime(2025, 4, 20), ClientRating = 3.8 },
+        new Booking { Id = 22, ClientId = 4, RoomId = 1, Date = new DateTime(2025, 4, 25), ClientRating = 4.5 },
+        new Booking { Id = 23, ClientId = 5, RoomId = 1, Date = new DateTime(2025, 4, 25), ClientRating = 3.9 },
+        new Booking { Id = 24, ClientId = 6, RoomId = 1, Date = new DateTime(2025, 3, 5), ClientRating = 4.1 },
+        new Booking { Id = 25, ClientId = 6, RoomId = 9, Date = new DateTime(2025, 3, 5), ClientRating = 4.0 },
+        new Booking { Id = 26, ClientId = 6, RoomId = 3, Date = new DateTime(2025, 3, 5), ClientRating = 3.7 },
+        new Booking { Id = 27, ClientId = 7, RoomId = 2, Date = new DateTime(2025, 2, 10), ClientRating = 3.5 },
+        new Booking { Id = 28, ClientId = 7, RoomId = 3, Date = new DateTime(2025, 2, 10), ClientRating = 3.6 },
+        new Booking { Id = 29, ClientId = 8, RoomId = 8, Date = new DateTime(2025, 1, 20), ClientRating = 4.8 },
+        new Booking { Id = 30, ClientId = 8, RoomId = 9, Date = new DateTime(2025, 1, 20), ClientRating = 4.9 },
+        new Booking { Id = 31, ClientId = 10, RoomId = 4, Date = new DateTime(2025, 4, 5), ClientRating = 4.0 },
+        new Booking { Id = 32, ClientId = 3, RoomId = 5, Date = new DateTime(2025, 4, 7), ClientRating = 3.7 },
+        new Booking { Id = 33, ClientId = 4, RoomId = 6, Date = new DateTime(2025, 4, 10), ClientRating = 4.2 },
+        new Booking { Id = 34, ClientId = 5, RoomId = 7, Date = new DateTime(2025, 4, 15), ClientRating = 3.9 },
+        new Booking { Id = 35, ClientId = 6, RoomId = 8, Date = new DateTime(2025, 4, 18), ClientRating = 4.3 },
+        new Booking { Id = 36, ClientId = 10, RoomId = 1, Date = new DateTime(2025, 3, 1), ClientRating = 4.0 },
+        new Booking { Id = 37, ClientId = 10, RoomId = 2, Date = new DateTime(2025, 3, 1), ClientRating = 4.1 },
+        new Booking { Id = 38, ClientId = 10, RoomId = 3, Date = new DateTime(2025, 3, 1), ClientRating = 3.9 },
+        new Booking { Id = 39, ClientId = 10, RoomId = 4, Date = new DateTime(2025, 3, 1), ClientRating = 4.2 },
+        new Booking { Id = 40, ClientId = 10, RoomId = 5, Date = new DateTime(2025, 3, 1), ClientRating = 4.3 },
+        new Booking { Id = 41, ClientId = 9, RoomId = 6, Date = new DateTime(2025, 2, 5), ClientRating = 3.8 },
+        new Booking { Id = 42, ClientId = 9, RoomId = 7, Date = new DateTime(2025, 2, 5), ClientRating = 3.9 },
+        new Booking { Id = 43, ClientId = 9, RoomId = 8, Date = new DateTime(2025, 2, 5), ClientRating = 4.0 },
+        new Booking { Id = 44, ClientId = 8, RoomId = 10, Date = new DateTime(2025, 1, 20), ClientRating = 4.5 },
+        new Booking { Id = 45, ClientId = 8, RoomId = 11, Date = new DateTime(2025, 1, 20), ClientRating = 4.6 },
+        new Booking { Id = 46, ClientId = 7, RoomId = 1, Date = new DateTime(2025, 2, 10), ClientRating = 3.5 },
+        new Booking { Id = 47, ClientId = 7, RoomId = 2, Date = new DateTime(2025, 2, 15), ClientRating = 3.4 },
+        new Booking { Id = 48, ClientId = 7, RoomId = 3, Date = new DateTime(2025, 2, 17), ClientRating = 3.6 }
+    };
+
     public static void AssignHotelsToRooms()
     {
-        foreach (var room in Rooms)
-        {
-            room.Hotel = Hotels.FirstOrDefault(h => h.Id == room.HotelId);
-        }
+        foreach (var room in Rooms) room.Hotel = Hotels.FirstOrDefault(h => h.Id == room.HotelId);
     }
-    
+
     public static void AssignClientsToBookings()
     {
-        foreach (var booking in Bookings)
-        {
-            booking.Client = Clients.FirstOrDefault(c => c.Id == booking.ClientId);
-        }
+        foreach (var booking in Bookings) booking.Client = Clients.FirstOrDefault(c => c.Id == booking.ClientId);
     }
-    
+
     public static void AssignRoomsToBookings()
     {
-        foreach (var booking in Bookings)
-        {
-            booking.Room = Rooms.FirstOrDefault(r => r.Id == booking.RoomId);
-        }
+        foreach (var booking in Bookings) booking.Room = Rooms.FirstOrDefault(r => r.Id == booking.RoomId);
     }
 }

@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using LINQToObjects;
+﻿using LINQToObjects;
+using LINQToObjects.LINQ_to_XML;
 
-class Program
+internal class Program
 {
-    static void Main()
+    /*private static void Main()
     {
         var hotels = Seeder.Hotels;
         var clients = Seeder.Clients;
         var rooms = Seeder.Rooms;
         var bookings = Seeder.Bookings;
+
         Seeder.AssignHotelsToRooms();
         Seeder.AssignClientsToBookings();
         Seeder.AssignRoomsToBookings();
-        
          // Фільтрація готелів у Франції з рейтингом вище 4.5
         var frenchHotels = hotels
             .Where(h => h.Country == "France" && h.Rating > 4.5)
@@ -95,20 +93,20 @@ class Program
             .ToList();
         Console.WriteLine("\nClients without bookings:");
         clientsWithoutBookings.ForEach(c => Console.WriteLine(c.Name));
-        
+
         // Знайти готелі, у яких відсоток повторних бронювань вище 70%
         var highRepeatHotels = hotels.Where(h =>
         {
             var hotelBookings = bookings.Where(b => rooms.Any(r => r.Id == b.RoomId && r.HotelId == h.Id));
-            if (!hotelBookings.Any())   
+            if (!hotelBookings.Any())
                 return false;
             var bookingGroups = hotelBookings.GroupBy(b => b.ClientId);
             var repeatBookingsCount = bookingGroups
-                .Where(g => g.Count() > 1) 
+                .Where(g => g.Count() > 1)
                 .Sum(g => g.Count() - 1);
             var totalBookingsCount = hotelBookings.Count();
             return (repeatBookingsCount / (double)totalBookingsCount) > 0.7;
-        }); 
+        });
         Console.WriteLine("\nHotels with high repeat bookings:");
         foreach (var hotel in highRepeatHotels)
         {
@@ -120,7 +118,7 @@ class Program
             bookings.Where(b => b.ClientId == c.Id && b.Date >= DateTime.Now.AddYears(-1))
                 .Select(b => hotels.First(h => h.Id == rooms.First(r => r.Id == b.RoomId).HotelId).Country)
                 .Distinct().Count() >= 3);
-        
+
         Console.WriteLine("\nClients who have vacationed in 3 or more countries in a year:");
         foreach (var client in clientsOneYearAgo)
         {
@@ -139,7 +137,7 @@ class Program
             var lostClients = loyalClients.Except(recentClients).Count();
             return lostClients > 0.3 * loyalClients.Count();
         });
-        
+
         Console.WriteLine("\nHotels with a loss of 30% of customers in the last 6 months:");
         foreach (var hotel in affectedHotels)
         {
@@ -152,7 +150,7 @@ class Program
             {
                 var city = cb.First().Room.Hotel.City;
                 var hotelIds = cb.Select(b => b.Room.Hotel.Id).Distinct();
-                return cb.All(b => b.Room.Hotel.City == city) 
+                return cb.All(b => b.Room.Hotel.City == city)
                        && hotelIds.Count() == cb.Count()
                        && cb.Count() >= 2;
             })
@@ -162,14 +160,12 @@ class Program
                 averageRating = cb.Average(b => b.ClientRating)
             })
             .ToList();
-        
+
         Console.WriteLine("\nGuests who change hotels within the same city:");
         foreach (var cb in cityHoppers)
         {
             Console.WriteLine($"{cb.client.Name}, Rating: {cb.averageRating}");
         }
         
-    }
+    }*/
 }
-
-
