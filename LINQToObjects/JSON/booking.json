@@ -1,0 +1,740 @@
+{
+  "Hotels": [
+    {
+      "Id": 1,
+      "Name": "Grand Hotel",
+      "Country": "France",
+      "City": "Paris",
+      "Rating": 4.5,
+      "Rooms": [
+        {
+          "Id": 1,
+          "HotelId": 1,
+          "Number": "101",
+          "Price": 100,
+          "Bookings": [
+            {
+              "Id": 1,
+              "ClientId": 1,
+              "RoomId": 1,
+              "Date": "2025-04-05T11:34:42.1742205\u002B03:00",
+              "ClientRating": 4,
+              "Client": {
+                "Id": 1,
+                "Name": "John Doe"
+              }
+            },
+            {
+              "Id": 14,
+              "ClientId": 1,
+              "RoomId": 1,
+              "Date": "2024-11-05T11:34:42.1801144\u002B02:00",
+              "ClientRating": 4.1,
+              "Client": {
+                "Id": 1,
+                "Name": "John Doe"
+              }
+            },
+            {
+              "Id": 19,
+              "ClientId": 1,
+              "RoomId": 1,
+              "Date": "2025-04-10T00:00:00",
+              "ClientRating": 4.2,
+              "Client": {
+                "Id": 1,
+                "Name": "John Doe"
+              }
+            },
+            {
+              "Id": 22,
+              "ClientId": 4,
+              "RoomId": 1,
+              "Date": "2025-04-25T00:00:00",
+              "ClientRating": 4.5,
+              "Client": {
+                "Id": 4,
+                "Name": "Michael Brown"
+              }
+            },
+            {
+              "Id": 23,
+              "ClientId": 5,
+              "RoomId": 1,
+              "Date": "2025-04-25T00:00:00",
+              "ClientRating": 3.9,
+              "Client": {
+                "Id": 5,
+                "Name": "David Wilson"
+              }
+            },
+            {
+              "Id": 24,
+              "ClientId": 6,
+              "RoomId": 1,
+              "Date": "2025-03-05T00:00:00",
+              "ClientRating": 4.1,
+              "Client": {
+                "Id": 6,
+                "Name": "Sophia Davis"
+              }
+            },
+            {
+              "Id": 36,
+              "ClientId": 10,
+              "RoomId": 1,
+              "Date": "2025-03-01T00:00:00",
+              "ClientRating": 4,
+              "Client": {
+                "Id": 10,
+                "Name": "Scarlett Johansson"
+              }
+            },
+            {
+              "Id": 46,
+              "ClientId": 7,
+              "RoomId": 1,
+              "Date": "2025-02-10T00:00:00",
+              "ClientRating": 3.5,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            }
+          ]
+        },
+        {
+          "Id": 9,
+          "HotelId": 1,
+          "Number": "102",
+          "Price": 110,
+          "Bookings": [
+            {
+              "Id": 8,
+              "ClientId": 5,
+              "RoomId": 9,
+              "Date": "2024-10-05T11:34:42.1801129\u002B03:00",
+              "ClientRating": 3.9,
+              "Client": {
+                "Id": 5,
+                "Name": "David Wilson"
+              }
+            },
+            {
+              "Id": 20,
+              "ClientId": 2,
+              "RoomId": 9,
+              "Date": "2025-04-15T00:00:00",
+              "ClientRating": 4,
+              "Client": {
+                "Id": 2,
+                "Name": "Jane Smith"
+              }
+            },
+            {
+              "Id": 21,
+              "ClientId": 3,
+              "RoomId": 9,
+              "Date": "2025-04-20T00:00:00",
+              "ClientRating": 3.8,
+              "Client": {
+                "Id": 3,
+                "Name": "Emily Johnson"
+              }
+            },
+            {
+              "Id": 25,
+              "ClientId": 6,
+              "RoomId": 9,
+              "Date": "2025-03-05T00:00:00",
+              "ClientRating": 4,
+              "Client": {
+                "Id": 6,
+                "Name": "Sophia Davis"
+              }
+            },
+            {
+              "Id": 30,
+              "ClientId": 8,
+              "RoomId": 9,
+              "Date": "2025-01-20T00:00:00",
+              "ClientRating": 4.9,
+              "Client": {
+                "Id": 8,
+                "Name": "Natalie Portman"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Name": "Ocean View",
+      "Country": "USA",
+      "City": "Miami",
+      "Rating": 4.2,
+      "Rooms": [
+        {
+          "Id": 2,
+          "HotelId": 2,
+          "Number": "202",
+          "Price": 150,
+          "Bookings": [
+            {
+              "Id": 2,
+              "ClientId": 1,
+              "RoomId": 2,
+              "Date": "2025-02-05T11:34:42.180109\u002B02:00",
+              "ClientRating": 2.5,
+              "Client": {
+                "Id": 1,
+                "Name": "John Doe"
+              }
+            },
+            {
+              "Id": 15,
+              "ClientId": 2,
+              "RoomId": 2,
+              "Date": "2024-09-05T11:34:42.1801172\u002B03:00",
+              "ClientRating": 3,
+              "Client": {
+                "Id": 2,
+                "Name": "Jane Smith"
+              }
+            },
+            {
+              "Id": 27,
+              "ClientId": 7,
+              "RoomId": 2,
+              "Date": "2025-02-10T00:00:00",
+              "ClientRating": 3.5,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            },
+            {
+              "Id": 37,
+              "ClientId": 10,
+              "RoomId": 2,
+              "Date": "2025-03-01T00:00:00",
+              "ClientRating": 4.1,
+              "Client": {
+                "Id": 10,
+                "Name": "Scarlett Johansson"
+              }
+            },
+            {
+              "Id": 47,
+              "ClientId": 7,
+              "RoomId": 2,
+              "Date": "2025-02-15T00:00:00",
+              "ClientRating": 3.4,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            }
+          ]
+        },
+        {
+          "Id": 10,
+          "HotelId": 2,
+          "Number": "203",
+          "Price": 140,
+          "Bookings": [
+            {
+              "Id": 9,
+              "ClientId": 6,
+              "RoomId": 10,
+              "Date": "2024-08-05T11:34:42.1801132\u002B03:00",
+              "ClientRating": 1,
+              "Client": {
+                "Id": 6,
+                "Name": "Sophia Davis"
+              }
+            },
+            {
+              "Id": 44,
+              "ClientId": 8,
+              "RoomId": 10,
+              "Date": "2025-01-20T00:00:00",
+              "ClientRating": 4.5,
+              "Client": {
+                "Id": 8,
+                "Name": "Natalie Portman"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Name": "Mountain Lodge",
+      "Country": "Switzerland",
+      "City": "Zermatt",
+      "Rating": 4.8,
+      "Rooms": [
+        {
+          "Id": 3,
+          "HotelId": 3,
+          "Number": "303",
+          "Price": 200,
+          "Bookings": [
+            {
+              "Id": 3,
+              "ClientId": 1,
+              "RoomId": 3,
+              "Date": "2025-01-05T11:34:42.1801108\u002B02:00",
+              "ClientRating": 1.8,
+              "Client": {
+                "Id": 1,
+                "Name": "John Doe"
+              }
+            },
+            {
+              "Id": 4,
+              "ClientId": 2,
+              "RoomId": 3,
+              "Date": "2024-09-05T11:34:42.1801111\u002B03:00",
+              "ClientRating": 4.5,
+              "Client": {
+                "Id": 2,
+                "Name": "Jane Smith"
+              }
+            },
+            {
+              "Id": 26,
+              "ClientId": 6,
+              "RoomId": 3,
+              "Date": "2025-03-05T00:00:00",
+              "ClientRating": 3.7,
+              "Client": {
+                "Id": 6,
+                "Name": "Sophia Davis"
+              }
+            },
+            {
+              "Id": 28,
+              "ClientId": 7,
+              "RoomId": 3,
+              "Date": "2025-02-10T00:00:00",
+              "ClientRating": 3.6,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            },
+            {
+              "Id": 38,
+              "ClientId": 10,
+              "RoomId": 3,
+              "Date": "2025-03-01T00:00:00",
+              "ClientRating": 3.9,
+              "Client": {
+                "Id": 10,
+                "Name": "Scarlett Johansson"
+              }
+            },
+            {
+              "Id": 48,
+              "ClientId": 7,
+              "RoomId": 3,
+              "Date": "2025-02-17T00:00:00",
+              "ClientRating": 3.6,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Name": "Le Royal Monceau",
+      "Country": "France",
+      "City": "Paris",
+      "Rating": 4.9,
+      "Rooms": [
+        {
+          "Id": 4,
+          "HotelId": 4,
+          "Number": "411",
+          "Price": 430,
+          "Bookings": [
+            {
+              "Id": 5,
+              "ClientId": 2,
+              "RoomId": 4,
+              "Date": "2025-01-05T11:34:42.1801114\u002B02:00",
+              "ClientRating": 3.2,
+              "Client": {
+                "Id": 2,
+                "Name": "Jane Smith"
+              }
+            },
+            {
+              "Id": 31,
+              "ClientId": 10,
+              "RoomId": 4,
+              "Date": "2025-04-05T00:00:00",
+              "ClientRating": 4,
+              "Client": {
+                "Id": 10,
+                "Name": "Scarlett Johansson"
+              }
+            },
+            {
+              "Id": 39,
+              "ClientId": 10,
+              "RoomId": 4,
+              "Date": "2025-03-01T00:00:00",
+              "ClientRating": 4.2,
+              "Client": {
+                "Id": 10,
+                "Name": "Scarlett Johansson"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Name": "The Ritz",
+      "Country": "UK",
+      "City": "London",
+      "Rating": 4.7,
+      "Rooms": [
+        {
+          "Id": 5,
+          "HotelId": 5,
+          "Number": "505",
+          "Price": 350,
+          "Bookings": [
+            {
+              "Id": 6,
+              "ClientId": 3,
+              "RoomId": 5,
+              "Date": "2025-03-05T11:34:42.1801125\u002B02:00",
+              "ClientRating": 4.8,
+              "Client": {
+                "Id": 3,
+                "Name": "Emily Johnson"
+              }
+            },
+            {
+              "Id": 32,
+              "ClientId": 3,
+              "RoomId": 5,
+              "Date": "2025-04-07T00:00:00",
+              "ClientRating": 3.7,
+              "Client": {
+                "Id": 3,
+                "Name": "Emily Johnson"
+              }
+            },
+            {
+              "Id": 40,
+              "ClientId": 10,
+              "RoomId": 5,
+              "Date": "2025-03-01T00:00:00",
+              "ClientRating": 4.3,
+              "Client": {
+                "Id": 10,
+                "Name": "Scarlett Johansson"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 6,
+      "Name": "Skyline Hotel",
+      "Country": "USA",
+      "City": "New York",
+      "Rating": 4.3,
+      "Rooms": [
+        {
+          "Id": 6,
+          "HotelId": 6,
+          "Number": "606",
+          "Price": 220,
+          "Bookings": [
+            {
+              "Id": 12,
+              "ClientId": 9,
+              "RoomId": 6,
+              "Date": "2024-07-05T11:34:42.180114\u002B03:00",
+              "ClientRating": 2.2,
+              "Client": {
+                "Id": 9,
+                "Name": "Robert Downey"
+              }
+            },
+            {
+              "Id": 33,
+              "ClientId": 4,
+              "RoomId": 6,
+              "Date": "2025-04-10T00:00:00",
+              "ClientRating": 4.2,
+              "Client": {
+                "Id": 4,
+                "Name": "Michael Brown"
+              }
+            },
+            {
+              "Id": 41,
+              "ClientId": 9,
+              "RoomId": 6,
+              "Date": "2025-02-05T00:00:00",
+              "ClientRating": 3.8,
+              "Client": {
+                "Id": 9,
+                "Name": "Robert Downey"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "Name": "Palm Resort",
+      "Country": "UAE",
+      "City": "Dubai",
+      "Rating": 4.6,
+      "Rooms": [
+        {
+          "Id": 7,
+          "HotelId": 7,
+          "Number": "707",
+          "Price": 500,
+          "Bookings": [
+            {
+              "Id": 7,
+              "ClientId": 4,
+              "RoomId": 7,
+              "Date": "2024-11-05T11:34:42.1801127\u002B02:00",
+              "ClientRating": 2,
+              "Client": {
+                "Id": 4,
+                "Name": "Michael Brown"
+              }
+            },
+            {
+              "Id": 34,
+              "ClientId": 5,
+              "RoomId": 7,
+              "Date": "2025-04-15T00:00:00",
+              "ClientRating": 3.9,
+              "Client": {
+                "Id": 5,
+                "Name": "David Wilson"
+              }
+            },
+            {
+              "Id": 42,
+              "ClientId": 9,
+              "RoomId": 7,
+              "Date": "2025-02-05T00:00:00",
+              "ClientRating": 3.9,
+              "Client": {
+                "Id": 9,
+                "Name": "Robert Downey"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 8,
+      "Name": "City Lights Hotel",
+      "Country": "USA",
+      "City": "New York",
+      "Rating": 4.1,
+      "Rooms": [
+        {
+          "Id": 8,
+          "HotelId": 8,
+          "Number": "808",
+          "Price": 180,
+          "Bookings": [
+            {
+              "Id": 13,
+              "ClientId": 10,
+              "RoomId": 8,
+              "Date": "2024-05-05T11:34:42.1801142\u002B03:00",
+              "ClientRating": 3.8,
+              "Client": {
+                "Id": 10,
+                "Name": "Scarlett Johansson"
+              }
+            },
+            {
+              "Id": 16,
+              "ClientId": 9,
+              "RoomId": 8,
+              "Date": "2025-04-05T11:34:42.1801175\u002B03:00",
+              "ClientRating": 2.5,
+              "Client": {
+                "Id": 9,
+                "Name": "Robert Downey"
+              }
+            },
+            {
+              "Id": 29,
+              "ClientId": 8,
+              "RoomId": 8,
+              "Date": "2025-01-20T00:00:00",
+              "ClientRating": 4.8,
+              "Client": {
+                "Id": 8,
+                "Name": "Natalie Portman"
+              }
+            },
+            {
+              "Id": 35,
+              "ClientId": 6,
+              "RoomId": 8,
+              "Date": "2025-04-18T00:00:00",
+              "ClientRating": 4.3,
+              "Client": {
+                "Id": 6,
+                "Name": "Sophia Davis"
+              }
+            },
+            {
+              "Id": 43,
+              "ClientId": 9,
+              "RoomId": 8,
+              "Date": "2025-02-05T00:00:00",
+              "ClientRating": 4,
+              "Client": {
+                "Id": 9,
+                "Name": "Robert Downey"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 9,
+      "Name": "Beach Paradise",
+      "Country": "Spain",
+      "City": "Barcelona",
+      "Rating": 4.4,
+      "Rooms": [
+        {
+          "Id": 11,
+          "HotelId": 9,
+          "Number": "909",
+          "Price": 300,
+          "Bookings": [
+            {
+              "Id": 10,
+              "ClientId": 7,
+              "RoomId": 11,
+              "Date": "2024-05-05T11:34:42.1801135\u002B03:00",
+              "ClientRating": 4.7,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            },
+            {
+              "Id": 15,
+              "ClientId": 7,
+              "RoomId": 11,
+              "Date": "2024-08-05T11:34:42.1801177\u002B03:00",
+              "ClientRating": 3.1,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            },
+            {
+              "Id": 16,
+              "ClientId": 7,
+              "RoomId": 11,
+              "Date": "2024-09-05T11:34:42.180118\u002B03:00",
+              "ClientRating": 3.5,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            },
+            {
+              "Id": 17,
+              "ClientId": 7,
+              "RoomId": 11,
+              "Date": "2024-10-05T11:34:42.1801183\u002B03:00",
+              "ClientRating": 4.2,
+              "Client": {
+                "Id": 7,
+                "Name": "Chris Evans"
+              }
+            },
+            {
+              "Id": 18,
+              "ClientId": 8,
+              "RoomId": 11,
+              "Date": "2024-12-05T11:34:42.1801185\u002B02:00",
+              "ClientRating": 4.7,
+              "Client": {
+                "Id": 8,
+                "Name": "Natalie Portman"
+              }
+            },
+            {
+              "Id": 45,
+              "ClientId": 8,
+              "RoomId": 11,
+              "Date": "2025-01-20T00:00:00",
+              "ClientRating": 4.6,
+              "Client": {
+                "Id": 8,
+                "Name": "Natalie Portman"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 10,
+      "Name": "Historic Inn",
+      "Country": "Italy",
+      "City": "Rome",
+      "Rating": 4,
+      "Rooms": [
+        {
+          "Id": 12,
+          "HotelId": 10,
+          "Number": "1010",
+          "Price": 270,
+          "Bookings": [
+            {
+              "Id": 11,
+              "ClientId": 8,
+              "RoomId": 12,
+              "Date": "2025-02-05T11:34:42.1801138\u002B02:00",
+              "ClientRating": 4.5,
+              "Client": {
+                "Id": 8,
+                "Name": "Natalie Portman"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

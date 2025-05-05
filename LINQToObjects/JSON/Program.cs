@@ -1,6 +1,6 @@
 ﻿namespace LINQToObjects.JSON;
 
-/*public class Program
+public class Program
 {
     static void Main(string[] args)
     {
@@ -10,4 +10,4 @@
             Console.WriteLine("If you want to end program, click on Backspace");
         } while (Console.ReadKey().Key != ConsoleKey.Backspace);
     }
-}*/
+}

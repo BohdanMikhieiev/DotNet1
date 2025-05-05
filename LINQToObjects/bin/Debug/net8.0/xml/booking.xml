@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
   <Hotel Id="1" Name="Grand Hotel" Country="France" City="Paris" Rating="4.5">
     <Rooms>
       <Room Id="1" Number="101" Price="100">
         <Bookings>
-          <Booking Id="1" Date="2025-04-03" Nights="9" ClientRating="4">
+          <Booking Id="1" Date="2025-04-05" ClientRating="4" Nights="2">
             <Client Id="1" Name="John Doe" />
           </Booking>
-          <Booking Id="14" Date="2024-11-03" Nights="18" ClientRating="4.1">
+          <Booking Id="14" Date="2024-11-05" ClientRating="4.1" Nights="16">
             <Client Id="1" Name="John Doe" />
           </Booking>
-          <Booking Id="19" Date="2025-04-10" Nights="10" ClientRating="4.2">
+          <Booking Id="19" Date="2025-04-10" ClientRating="4.2" Nights="11">
             <Client Id="1" Name="John Doe" />
           </Booking>
-          <Booking Id="22" Date="2025-04-25" Nights="7" ClientRating="4.5">
+          <Booking Id="22" Date="2025-04-25" ClientRating="4.5" Nights="5">
             <Client Id="4" Name="Michael Brown" />
           </Booking>
-          <Booking Id="23" Date="2025-04-25" Nights="6" ClientRating="3.9">
+          <Booking Id="23" Date="2025-04-25" ClientRating="3.9" Nights="6">
             <Client Id="5" Name="David Wilson" />
           </Booking>
-          <Booking Id="24" Date="2025-03-05" Nights="5" ClientRating="4.1">
+          <Booking Id="24" Date="2025-03-05" ClientRating="4.1" Nights="4">
             <Client Id="6" Name="Sophia Davis" />
           </Booking>
-          <Booking Id="36" Date="2025-03-01" Nights="3" ClientRating="4">
+          <Booking Id="36" Date="2025-03-01" ClientRating="4" Nights="13">
             <Client Id="10" Name="Scarlett Johansson" />
           </Booking>
-          <Booking Id="46" Date="2025-02-10" Nights="18" ClientRating="3.5">
+          <Booking Id="46" Date="2025-02-10" ClientRating="3.5" Nights="13">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
         </Bookings>
       </Room>
       <Room Id="9" Number="102" Price="110">
         <Bookings>
-          <Booking Id="8" Date="2024-10-03" Nights="20" ClientRating="3.9">
+          <Booking Id="8" Date="2024-10-05" ClientRating="3.9" Nights="9">
             <Client Id="5" Name="David Wilson" />
           </Booking>
-          <Booking Id="20" Date="2025-04-15" Nights="17" ClientRating="4">
+          <Booking Id="20" Date="2025-04-15" ClientRating="4" Nights="17">
             <Client Id="2" Name="Jane Smith" />
           </Booking>
-          <Booking Id="21" Date="2025-04-20" Nights="8" ClientRating="3.8">
+          <Booking Id="21" Date="2025-04-20" ClientRating="3.8" Nights="15">
             <Client Id="3" Name="Emily Johnson" />
           </Booking>
-          <Booking Id="25" Date="2025-03-05" Nights="15" ClientRating="4">
+          <Booking Id="25" Date="2025-03-05" ClientRating="4" Nights="5">
             <Client Id="6" Name="Sophia Davis" />
           </Booking>
-          <Booking Id="30" Date="2025-01-20" Nights="12" ClientRating="4.9">
+          <Booking Id="30" Date="2025-01-20" ClientRating="4.9" Nights="1">
             <Client Id="8" Name="Natalie Portman" />
           </Booking>
         </Bookings>
@@ -55,29 +55,29 @@
     <Rooms>
       <Room Id="2" Number="202" Price="150">
         <Bookings>
-          <Booking Id="2" Date="2025-02-03" Nights="7" ClientRating="2.5">
+          <Booking Id="2" Date="2025-02-05" ClientRating="2.5" Nights="5">
             <Client Id="1" Name="John Doe" />
           </Booking>
-          <Booking Id="15" Date="2024-09-03" Nights="18" ClientRating="3">
+          <Booking Id="15" Date="2024-09-05" ClientRating="3" Nights="16">
             <Client Id="2" Name="Jane Smith" />
           </Booking>
-          <Booking Id="27" Date="2025-02-10" Nights="8" ClientRating="3.5">
+          <Booking Id="27" Date="2025-02-10" ClientRating="3.5" Nights="12">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
-          <Booking Id="37" Date="2025-03-01" Nights="14" ClientRating="4.1">
+          <Booking Id="37" Date="2025-03-01" ClientRating="4.1" Nights="19">
             <Client Id="10" Name="Scarlett Johansson" />
           </Booking>
-          <Booking Id="47" Date="2025-02-15" Nights="13" ClientRating="3.4">
+          <Booking Id="47" Date="2025-02-15" ClientRating="3.4" Nights="8">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
         </Bookings>
       </Room>
       <Room Id="10" Number="203" Price="140">
         <Bookings>
-          <Booking Id="9" Date="2024-08-03" Nights="2" ClientRating="1">
+          <Booking Id="9" Date="2024-08-05" ClientRating="1" Nights="18">
             <Client Id="6" Name="Sophia Davis" />
           </Booking>
-          <Booking Id="44" Date="2025-01-20" Nights="19" ClientRating="4.5">
+          <Booking Id="44" Date="2025-01-20" ClientRating="4.5" Nights="19">
             <Client Id="8" Name="Natalie Portman" />
           </Booking>
         </Bookings>
@@ -88,22 +88,22 @@
     <Rooms>
       <Room Id="3" Number="303" Price="200">
         <Bookings>
-          <Booking Id="3" Date="2025-01-03" Nights="5" ClientRating="1.8">
+          <Booking Id="3" Date="2025-01-05" ClientRating="1.8" Nights="12">
             <Client Id="1" Name="John Doe" />
           </Booking>
-          <Booking Id="4" Date="2024-09-03" Nights="7" ClientRating="4.5">
+          <Booking Id="4" Date="2024-09-05" ClientRating="4.5" Nights="15">
             <Client Id="2" Name="Jane Smith" />
           </Booking>
-          <Booking Id="26" Date="2025-03-05" Nights="6" ClientRating="3.7">
+          <Booking Id="26" Date="2025-03-05" ClientRating="3.7" Nights="13">
             <Client Id="6" Name="Sophia Davis" />
           </Booking>
-          <Booking Id="28" Date="2025-02-10" Nights="11" ClientRating="3.6">
+          <Booking Id="28" Date="2025-02-10" ClientRating="3.6" Nights="3">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
-          <Booking Id="38" Date="2025-03-01" Nights="8" ClientRating="3.9">
+          <Booking Id="38" Date="2025-03-01" ClientRating="3.9" Nights="1">
             <Client Id="10" Name="Scarlett Johansson" />
           </Booking>
-          <Booking Id="48" Date="2025-02-17" Nights="4" ClientRating="3.6">
+          <Booking Id="48" Date="2025-02-17" ClientRating="3.6" Nights="16">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
         </Bookings>
@@ -114,13 +114,13 @@
     <Rooms>
       <Room Id="4" Number="411" Price="430">
         <Bookings>
-          <Booking Id="5" Date="2025-01-03" Nights="21" ClientRating="3.2">
+          <Booking Id="5" Date="2025-01-05" ClientRating="3.2" Nights="21">
             <Client Id="2" Name="Jane Smith" />
           </Booking>
-          <Booking Id="31" Date="2025-04-05" Nights="16" ClientRating="4">
+          <Booking Id="31" Date="2025-04-05" ClientRating="4" Nights="6">
             <Client Id="10" Name="Scarlett Johansson" />
           </Booking>
-          <Booking Id="39" Date="2025-03-01" Nights="2" ClientRating="4.2">
+          <Booking Id="39" Date="2025-03-01" ClientRating="4.2" Nights="21">
             <Client Id="10" Name="Scarlett Johansson" />
           </Booking>
         </Bookings>
@@ -131,13 +131,13 @@
     <Rooms>
       <Room Id="5" Number="505" Price="350">
         <Bookings>
-          <Booking Id="6" Date="2025-03-03" Nights="20" ClientRating="4.8">
+          <Booking Id="6" Date="2025-03-05" ClientRating="4.8" Nights="7">
             <Client Id="3" Name="Emily Johnson" />
           </Booking>
-          <Booking Id="32" Date="2025-04-07" Nights="3" ClientRating="3.7">
+          <Booking Id="32" Date="2025-04-07" ClientRating="3.7" Nights="21">
             <Client Id="3" Name="Emily Johnson" />
           </Booking>
-          <Booking Id="40" Date="2025-03-01" Nights="19" ClientRating="4.3">
+          <Booking Id="40" Date="2025-03-01" ClientRating="4.3" Nights="17">
             <Client Id="10" Name="Scarlett Johansson" />
           </Booking>
         </Bookings>
@@ -148,13 +148,13 @@
     <Rooms>
       <Room Id="6" Number="606" Price="220">
         <Bookings>
-          <Booking Id="12" Date="2024-07-03" Nights="6" ClientRating="2.2">
+          <Booking Id="12" Date="2024-07-05" ClientRating="2.2" Nights="8">
             <Client Id="9" Name="Robert Downey" />
           </Booking>
-          <Booking Id="33" Date="2025-04-10" Nights="19" ClientRating="4.2">
+          <Booking Id="33" Date="2025-04-10" ClientRating="4.2" Nights="8">
             <Client Id="4" Name="Michael Brown" />
           </Booking>
-          <Booking Id="41" Date="2025-02-05" Nights="19" ClientRating="3.8">
+          <Booking Id="41" Date="2025-02-05" ClientRating="3.8" Nights="20">
             <Client Id="9" Name="Robert Downey" />
           </Booking>
         </Bookings>
@@ -165,13 +165,13 @@
     <Rooms>
       <Room Id="7" Number="707" Price="500">
         <Bookings>
-          <Booking Id="7" Date="2024-11-03" Nights="17" ClientRating="2">
+          <Booking Id="7" Date="2024-11-05" ClientRating="2" Nights="16">
             <Client Id="4" Name="Michael Brown" />
           </Booking>
-          <Booking Id="34" Date="2025-04-15" Nights="19" ClientRating="3.9">
+          <Booking Id="34" Date="2025-04-15" ClientRating="3.9" Nights="13">
             <Client Id="5" Name="David Wilson" />
           </Booking>
-          <Booking Id="42" Date="2025-02-05" Nights="1" ClientRating="3.9">
+          <Booking Id="42" Date="2025-02-05" ClientRating="3.9" Nights="20">
             <Client Id="9" Name="Robert Downey" />
           </Booking>
         </Bookings>
@@ -182,19 +182,19 @@
     <Rooms>
       <Room Id="8" Number="808" Price="180">
         <Bookings>
-          <Booking Id="13" Date="2024-05-03" Nights="15" ClientRating="3.8">
+          <Booking Id="13" Date="2024-05-05" ClientRating="3.8" Nights="18">
             <Client Id="10" Name="Scarlett Johansson" />
           </Booking>
-          <Booking Id="16" Date="2025-04-03" Nights="2" ClientRating="2.5">
+          <Booking Id="16" Date="2025-04-05" ClientRating="2.5" Nights="2">
             <Client Id="9" Name="Robert Downey" />
           </Booking>
-          <Booking Id="29" Date="2025-01-20" Nights="17" ClientRating="4.8">
+          <Booking Id="29" Date="2025-01-20" ClientRating="4.8" Nights="18">
             <Client Id="8" Name="Natalie Portman" />
           </Booking>
-          <Booking Id="35" Date="2025-04-18" Nights="3" ClientRating="4.3">
+          <Booking Id="35" Date="2025-04-18" ClientRating="4.3" Nights="14">
             <Client Id="6" Name="Sophia Davis" />
           </Booking>
-          <Booking Id="43" Date="2025-02-05" Nights="14" ClientRating="4">
+          <Booking Id="43" Date="2025-02-05" ClientRating="4" Nights="2">
             <Client Id="9" Name="Robert Downey" />
           </Booking>
         </Bookings>
@@ -205,22 +205,22 @@
     <Rooms>
       <Room Id="11" Number="909" Price="300">
         <Bookings>
-          <Booking Id="10" Date="2024-05-03" Nights="11" ClientRating="4.7">
+          <Booking Id="10" Date="2024-05-05" ClientRating="4.7" Nights="17">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
-          <Booking Id="15" Date="2024-08-03" Nights="21" ClientRating="3.1">
+          <Booking Id="15" Date="2024-08-05" ClientRating="3.1" Nights="9">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
-          <Booking Id="16" Date="2024-09-03" Nights="12" ClientRating="3.5">
+          <Booking Id="16" Date="2024-09-05" ClientRating="3.5" Nights="12">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
-          <Booking Id="17" Date="2024-10-03" Nights="15" ClientRating="4.2">
+          <Booking Id="17" Date="2024-10-05" ClientRating="4.2" Nights="6">
             <Client Id="7" Name="Chris Evans" />
           </Booking>
-          <Booking Id="18" Date="2024-12-03" Nights="4" ClientRating="4.7">
+          <Booking Id="18" Date="2024-12-05" ClientRating="4.7" Nights="20">
             <Client Id="8" Name="Natalie Portman" />
           </Booking>
-          <Booking Id="45" Date="2025-01-20" Nights="17" ClientRating="4.6">
+          <Booking Id="45" Date="2025-01-20" ClientRating="4.6" Nights="7">
             <Client Id="8" Name="Natalie Portman" />
           </Booking>
         </Bookings>
@@ -231,7 +231,7 @@
     <Rooms>
       <Room Id="12" Number="1010" Price="270">
         <Bookings>
-          <Booking Id="11" Date="2025-02-03" Nights="14" ClientRating="4.5">
+          <Booking Id="11" Date="2025-02-05" ClientRating="4.5" Nights="2">
             <Client Id="8" Name="Natalie Portman" />
           </Booking>
         </Bookings>
@@ -239,9 +239,6 @@
     </Rooms>
   </Hotel>
   <Hotel Id="11" Name="Test" Country="2" City="2" Rating="4">
-    <Rooms />
-  </Hotel>
-  <Hotel Id="13" Name="Abu" Country="USA" City="-" Rating="5.5">
     <Rooms />
   </Hotel>
 </Hotels>

@@ -1,6 +1,6 @@
 ﻿namespace LINQToObjects.LINQ_to_XML;
 
-public class Program
+/*public class Program
 {
     private static void Main()
     {
@@ -20,4 +20,4 @@ public class Program
             Console.WriteLine("If you want to end program, click on Backspace");
         } while (Console.ReadKey().Key != ConsoleKey.Backspace);
     }
-}
+}*/
