@@ -112,18 +112,20 @@ public static class MenuHolding
             case "1":
                 path = Path.Combine(BaseDirectory, "booking.xml");
                 MenuWriteElement(path);
+                Console.ReadKey();
                 break;
             case "2":
                 Console.WriteLine("If you want to create new file or open existing write its name: ");
                 path = Path.Combine(BaseDirectory, string.Concat(Console.ReadLine()?.Trim(), ".xml"));
                 XmlWrite.EnsureXmlFileHasRoot(path);
                 MenuWriteElement(path);
+                Console.ReadKey();
                 break;
             default:
                 Console.WriteLine("Wrong input");
+                Console.ReadKey();
                 break;
         }
-
         Console.Clear();
     }
 

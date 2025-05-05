@@ -4,17 +4,20 @@ public class Program
 {
     private static void Main()
     {
-        var hotels = Seeder.Hotels;
-        var clients = Seeder.Clients;
-        var rooms = Seeder.Rooms;
-        var bookings = Seeder.Bookings;
+        do{
+            var hotels = Seeder.Hotels;
+            var clients = Seeder.Clients;
+            var rooms = Seeder.Rooms;
+            var bookings = Seeder.Bookings;
 
-        Seeder.AssignHotelsToRooms();
-        Seeder.AssignClientsToBookings();
-        Seeder.AssignRoomsToBookings();
+            Seeder.AssignHotelsToRooms();
+            Seeder.AssignClientsToBookings();
+            Seeder.AssignRoomsToBookings();
 
-        // XmlImport.ExportHotelsToXml();
+            // XmlImport.ExportHotelsToXml();
 
-        MenuHolding.StartMenuHolding();
+            MenuHolding.StartMenuHolding();
+            Console.WriteLine("If you want to end program, click on Backspace");
+        } while (Console.ReadKey().Key != ConsoleKey.Backspace);
     }
 }

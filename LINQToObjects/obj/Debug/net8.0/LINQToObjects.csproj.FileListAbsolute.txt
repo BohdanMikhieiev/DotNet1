@@ -27,3 +27,6 @@ D:\RiderProjects\DotNet1\LINQToObjects\obj\Debug\net8.0\refint\LINQToObjects.dll
 D:\RiderProjects\DotNet1\LINQToObjects\obj\Debug\net8.0\LINQToObjects.pdb
 D:\RiderProjects\DotNet1\LINQToObjects\obj\Debug\net8.0\LINQToObjects.genruntimeconfig.cache
 D:\RiderProjects\DotNet1\LINQToObjects\obj\Debug\net8.0\ref\LINQToObjects.dll
+D:\RiderProjects\DotNet1\LINQToObjects\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\RiderProjects\DotNet1\LINQToObjects\obj\Debug\net8.0\LINQToObjects.csproj.AssemblyReference.cache
+D:\RiderProjects\DotNet1\LINQToObjects\obj\Debug\net8.0\LINQToOb.75515C3D.Up2Date

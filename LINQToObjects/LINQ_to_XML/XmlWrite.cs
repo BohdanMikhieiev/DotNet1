@@ -12,6 +12,12 @@ public class XmlWrite
         Console.Write("Enter hotel ID: ");
         var id = int.Parse(Console.ReadLine());
 
+        if (model.Hotels.Any(h => h.Id == id))
+        {
+            Console.WriteLine("Hotel with this ID already exists.");
+            return;
+        }
+
         Console.Write("Enter hotel name: ");
         var name = Console.ReadLine();
 
@@ -56,6 +62,12 @@ public class XmlWrite
         Console.Write("Enter room ID: ");
         var id = int.Parse(Console.ReadLine());
 
+        if (hotel.Rooms.Any(r => r.Id == id))
+        {
+            Console.WriteLine("Room with this ID already exists in this hotel.");
+            return;
+        }
+
         Console.Write("Enter room number: ");
         var number = int.Parse(Console.ReadLine());
 
@@ -76,64 +88,82 @@ public class XmlWrite
     }
 
     public static void AddBooking(string filePath)
+{
+    var model = XmlHelper.LoadHotelsModel(filePath);
+
+    Console.Write("Enter hotel ID: ");
+    var hotelId = int.Parse(Console.ReadLine());
+
+    var hotel = model.Hotels.FirstOrDefault(h => h.Id == hotelId);
+    if (hotel == null)
     {
-        var model = XmlHelper.LoadHotelsModel(filePath);
-
-        Console.Write("Enter hotel ID: ");
-        var hotelId = int.Parse(Console.ReadLine());
-
-        var hotel = model.Hotels.FirstOrDefault(h => h.Id == hotelId);
-        if (hotel == null)
-        {
-            Console.WriteLine("Hotel not found.");
-            return;
-        }
-
-        Console.Write("Enter room ID: ");
-        var roomId = int.Parse(Console.ReadLine());
-
-        var room = hotel.Rooms.FirstOrDefault(r => r.Id == roomId);
-        if (room == null)
-        {
-            Console.WriteLine("Room not found.");
-            return;
-        }
-
-        Console.Write("Enter booking ID: ");
-        var bookingId = int.Parse(Console.ReadLine());
-
-        Console.Write("Enter booking date (yyyy-MM-dd): ");
-        var date = Console.ReadLine();
-
-        Console.Write("Enter count of nights: ");
-        var nights = Console.ReadLine();
-
-        Console.Write("Enter client rating: ");
-        var rating = double.Parse(Console.ReadLine());
-
-        Console.Write("Enter client ID: ");
-        var clientId = int.Parse(Console.ReadLine());
-
-        Console.Write("Enter client name: ");
-        var clientName = Console.ReadLine();
-
-        room.Bookings.Add(new Booking
-        {
-            Id = bookingId,
-            Date = date,
-            Nights = nights,
-            ClientRating = rating,
-            Client = new Client
-            {
-                Id = clientId,
-                Name = clientName
-            }
-        });
-
-        XmlHelper.SaveHotelsModel(filePath, model);
-        Console.WriteLine("Booking added successfully.");
-        Console.ReadLine();
+        Console.WriteLine("Hotel not found.");
+        return;
     }
+
+    Console.Write("Enter room ID: ");
+    var roomId = int.Parse(Console.ReadLine());
+
+    var room = hotel.Rooms.FirstOrDefault(r => r.Id == roomId);
+    if (room == null)
+    {
+        Console.WriteLine("Room not found.");
+        return;
+    }
+
+    Console.Write("Enter booking ID: ");
+    var bookingId = int.Parse(Console.ReadLine());
+
+    if (room.Bookings.Any(b => b.Id == bookingId))
+    {
+        Console.WriteLine("Booking with this ID already exists in this room.");
+        return;
+    }
+
+    Console.Write("Enter booking date (yyyy-MM-dd): ");
+    var date = Console.ReadLine();
+
+    Console.Write("Enter count of nights: ");
+    var nights = Console.ReadLine();
+
+    Console.Write("Enter client rating: ");
+    var rating = double.Parse(Console.ReadLine());
+
+    Console.Write("Enter client ID: ");
+    var clientId = int.Parse(Console.ReadLine());
+
+    Console.Write("Enter client name: ");
+    var clientName = Console.ReadLine();
+
+    bool isClientConflict = model.Hotels
+        .SelectMany(h => h.Rooms)
+        .SelectMany(r => r.Bookings)
+        .Any(b => b.Client.Id == clientId && b.Client.Name != clientName);
+
+    if (isClientConflict)
+    {
+        Console.WriteLine("Client ID is already used with a different name.");
+        return;
+    }
+
+    room.Bookings.Add(new Booking
+    {
+        Id = bookingId,
+        Date = date,
+        Nights = nights,
+        ClientRating = rating,
+        Client = new Client
+        {
+            Id = clientId,
+            Name = clientName
+        }
+    });
+
+    XmlHelper.SaveHotelsModel(filePath, model);
+    Console.WriteLine("Booking added successfully.");
+    Console.ReadLine();
+}
+
 
     public static void EnsureXmlFileHasRoot(string filePath)
     {

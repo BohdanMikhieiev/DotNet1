@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8hf2XmIsXQRpeusyMnYL2g8Yt/8B9Mys7aBdvF2IJcBK5HqGym8iFqsCnfZ7a+EzTgeXUXCnLdCin9/sJUSS4w==",
+  "dgSpecHash": "6PIE5RhNuuUKYnofAnBLyp+S5/A7c0DK8fyHuk66YosGJrcZKQikXTngfp400dktXxZjhWzuOkEv6zRNc5kxnA==",
   "success": true,
   "projectFilePath": "D:\\RiderProjects\\DotNet1\\LINQToObjects\\LINQToObjects.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Анастасия\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
